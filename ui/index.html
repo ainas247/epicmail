@@ -18,7 +18,17 @@
                 <h1>WELCOME TO EPIC MAIL</h1>
                 <h2>What Do You Want To Do?</h2>
             </center>
+             <button type="submit" id="btn1" onclick="login()">Login</button>
             <button type="submit" id="btn2" onclick="signup()">SignUp</button>
+            <div id="login-form">
+                <form>
+                    <input type="text" id="userloginusername" placeholder="Username">
+                    <input type="password" id="userloginpassword" placeholder="Password">
+                    <button type="submit" id="btn1">LOGIN</button><br>
+                    <a href="#" onclick="reset();">Forgot/Reset Password</a>
+                </form>
+            </div>
+            
             <div id="signup-form">
                 <form>
                     <input type="text" id="usersignupusername" placeholder="Username">
