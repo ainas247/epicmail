@@ -350,6 +350,16 @@ ul li ul li a:hover {
 }
 
 
+@media screen and (max-width: 600px) {
+  #mails{
+    width: 100%;
+  }
+  
+  #displaymails{
+    width: 100%;
+    margin-left: 0%;
+  }
+
 
 @media screen and (max-width: 550px) {
   ul {
