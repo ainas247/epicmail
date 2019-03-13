@@ -311,6 +311,46 @@ ul li ul li a:hover {
   background-color: black;
 }
 
+/* SENT MAILS */
+#sentmail{
+ width: 100%;
+}
+
+#mails{
+  width:40%;
+  display: inline-block;
+  padding-left: 10px;
+  margin-top: 0px;
+}
+
+#mails li{
+  display: block;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#mails li:hover{
+    border: 5px #e2e2e2 solid;
+}
+
+.displaymails{
+  width:40%;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid rgb(45, 70, 93);
+  margin-left: 50px;
+  border-radius: 10px;
+
+}
+
+
+
 @media screen and (max-width: 550px) {
   ul {
     width: 100%;
