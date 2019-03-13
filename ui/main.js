@@ -24,3 +24,9 @@ function reset() {
     document.getElementById('login-form').style.display = 'none';
 
 }
+
+document.getElementById("displaymails").style.display = 'none';
+
+function displayMails() {
+    document.getElementById("displaymails").style.display = "block";
+}
