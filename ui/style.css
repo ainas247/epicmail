@@ -346,7 +346,16 @@ ul li ul li a:hover {
   border: solid rgb(45, 70, 93);
   margin-left: 50px;
   border-radius: 10px;
+}
 
+  /* USER SHOULD READ BE ABLE TO READ EMAIL */
+  #readmail{
+    padding-left: 20px;
+  }
+#readmail p{
+  width: 50%;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
