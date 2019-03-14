@@ -30,3 +30,14 @@ document.getElementById("displaymails").style.display = 'none';
 function displayMails() {
     document.getElementById("displaymails").style.display = "block";
 }
+
+
+
+function checkPass() {
+    let pass1 = document.getElementById('userpass').value
+    let pass2 = document.getElementById("confirm").value;
+    if (pass1 != pass2) {
+        alert('Password is Not Correct');
+    }
+}
+

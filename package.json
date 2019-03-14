@@ -1,0 +1,24 @@
+{
+  "name": "epicmail",
+  "version": "1.0.0",
+  "description": "EPIC EMAIL\r Email App with cool features such as\r User can sign up\r user can sign in\r user can create group\r user can send mail\r and many more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ainas247/epicmail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ainas247/epicmail/issues"
+  },
+  "homepage": "https://github.com/ainas247/epicmail#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
