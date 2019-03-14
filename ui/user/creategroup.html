@@ -14,6 +14,7 @@
 <body>
     <div id="main">
         <div id="menu">
+
             <ul>
                 <div id="welcomeuser">
                     <center><img src="../image/logoimg.png" width="150" width="150">
@@ -34,8 +35,8 @@
                             style="font-size:30px">&ensp;</i>READ MAIL</a></li>
                 <li><a href="draft.html" id="userdraft"><i class="fa fa-save" style="font-size:30px">&ensp;</i>DRAFT
                         MAIL</a></li>
-                <li><a href="creategroup.html" id="admincreategroup"><i class="fa fa-group"
-                            style="font-size:30px">&ensp;</i>CREATE GROUP</a></li>
+                        <li><a href="creategroup.html" id="admincreategroup"><i class="fa fa-group" style="font-size:30px">&ensp;</i>CREATE
+                                GROUP</a></li>
                 <li><a href="adduser.html" id="admincreategroup"><i class="fa fa-group"
                             style="font-size:30px">&ensp;</i>ADD MEMBER</a></li>
 
@@ -44,34 +45,21 @@
 
         <div id="main-content">
             <p>
-                <h1>COMPOSE MESSAGE</h1>
-            </p><br>
-            <form id="send-mail-form">
-                <input type="text" id="userloginusername" placeholder="Topic">
-                <textarea rows="6" cols="45" placeholder="Enter Your Message"></textarea><br>
-                <select id="adminselectuser">
-                    <option>SELECT USER </option>
-                    <option>Emmanuel</option>
-                    <option>Ezekiel</option>
-                    <option>Daniel</option>
-                </select><br>
+                <h1>CREATE GROUP</h1>
+            </p>
+            <div>
+                <form id="send-mail-form">
+                    <input type="text" id="userloginusername" placeholder="Group Id"><br>
+                    <input type="text" id="groupname" placeholder="Group Name"><br>
+                    <button type="submit" id="btn1" class="send-mail-btn">CREATE</button>
 
-                <select id="adminselectuser">
-                    <option>SELECT GROUP </option>
-                    <option>Group 1</option>
-                    <option>Group 2</option>
-                    <option>Group 3</option>
-                </select><br><br>
-
-                <button type="submit" id="btn1" class="send-mail-btn">SEND</button>
-                <button type="submit" id="btn2" class="send-mail-btn">SAVE</button>
+                </form>
+            </div>
         </div>
-        </form>
-    </div>
 
     </div>
 
-    <script src="main.js"></script>
+    <script src=""></script>
 </body>
 
 </html>
