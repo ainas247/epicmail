@@ -25,23 +25,25 @@
                     <input type="text" id="userloginusername" placeholder="Username">
                     <input type="password" id="userloginpassword" placeholder="Password">
                     <button type="submit" id="btn1">LOGIN</button><br>
-                    <a href="#" onclick="reset();">Forgot/Reset Password</a>
+                    <a href="#" onclick="reset();"><span style="color:white; font-size: 20px;"> Forgot/Reset Password</span></a>
                 </form>
             </div>
             
             <div id="signup-form">
                 <form action="./user/creategroup.html">
-                    <input type="text" id="usersignupusername" placeholder="Username">
-                    <input type="text" id="userloginemail" placeholder="Email">
-                    <input type="password" id="userloginpassword" placeholder="Password">
-                    <center><button type="submit" id="btn2">SIGN UP</button></center><br>
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name">
+                     <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                    <input type="email" id="userloginemail" name="email" placeholder="Email">
+                    <input type="password" id="userpass" name="password" placeholder="Password">
+                    <input type="password" id="confirm" name="confirmpassword" placeholder="Confirm Password">
+                    <center><button type="submit" id="btn2" onclick="checkPass();">SIGN UP</button></center><br>
                 </form>
             </div>
             <div id="reset-pass">
             
                 <form>
-                    <input type="text" id="userresetpasswordemail" placeholder="Email">
-                    <input type="password" id="usernewpassword" placeholder="New Password">
+                    <input type="text" id="userresetpasswordemail" name="username" placeholder="Email">
+                    <input type="password" id="usernewpassword" name="password" placeholder="New Password">
                     <center><button type="submit" id="btn1">RESET</button></center><br>
                 </form>
             </div>
