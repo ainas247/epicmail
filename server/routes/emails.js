@@ -7,6 +7,12 @@ router.get("/", (req, res) => {
   res.send(emails);
 });
 
+//GET MESSAGE ID 
+router.get('/:id', (req, res) => {
+  let findMessage = emails.find((email) => email.id === parseInt(req.params.id))
+  if (!findMessage) res.status('404').send('Message Not found');
+  res.status(200).send(findMessage);
+=======
 //GET MESSAGE SENT / DRAFT AND UNREAD MESSAGE
 router.get('/status/:status', (req, res) => {
     let emailStatus = emails.filter(message => message.status === req.params.status)
@@ -15,3 +21,5 @@ router.get('/status/:status', (req, res) => {
 })
 
 module.exports = router;
+
+
