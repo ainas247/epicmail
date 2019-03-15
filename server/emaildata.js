@@ -14,6 +14,14 @@ let emails = [
     myMessage: "This is First Email",
     parentMessageId: 1,
     status: "sent" // draft, sent or read
+    },
+  {
+    id: 3,
+    createdOn: Date(),
+    subject: "Welcome Epic Mail",
+    myMessage: "This is First Email",
+    parentMessageId: 1,
+    status: "unread" // draft, sent or read
   }
 ];
 module.exports = emails;
