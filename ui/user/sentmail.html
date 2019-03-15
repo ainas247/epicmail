@@ -23,105 +23,96 @@
                 </div>
 
 
-                <li><a href="#" id="userlogin"><i class="fa fa-columns" style="font-size:30px">&ensp;</i>LOGOUT</a></li>
                 <li><a href="inbox.html" id="userinbox"><i class="fa fa-inbox"
-                            style="font-size:30px">&ensp;</i>INBOX</a></li>
+                            style="font-size:30px">&ensp;</i>Inbox</a></li>
                 <li><a href="sendmail.html" id="usersendmail"><i class="fa fa-send"
-                            style="font-size:30px">&ensp;</i>COMPOSE MAIL</a></li>
+                            style="font-size:30px">&ensp;</i>Compose Mail</a></li>
                 <li><a href="sentmail.html" id="usersentmail"><i class="fa fa-share"
-                            style="font-size:30px">&ensp;</i>SENTMAIL</a></li>
-                <li><a href="readmail.html" id="userinbox"><i class="fa fa-folder-open	"
-                            style="font-size:30px">&ensp;</i>READ MAIL</a></li>
-                <li><a href="draft.html" id="userdraft"><i class="fa fa-save" style="font-size:30px">&ensp;</i>DRAFT
-                        MAIL</a></li>
+                            style="font-size:30px">&ensp;</i>Sent Mail</a></li>
+                <li><a href="draft.html" id="userdraft"><i class="fa fa-save" style="font-size:30px">&ensp;</i>Draft
+                        Mail</a></li>
                 <li><a href="creategroup.html" id="admincreategroup"><i class="fa fa-group"
-                            style="font-size:30px">&ensp;</i>CREATE GROUP</a></li>
+                            style="font-size:30px">&ensp;</i>Create Group</a></li>
                 <li><a href="adduser.html" id="admincreategroup"><i class="fa fa-group"
-                            style="font-size:30px">&ensp;</i>ADD MEMBER</a></li>
+                            style="font-size:30px">&ensp;</i>Add Member</a></li>
 
             </ul>
         </div>
-
         <div id="main-content">
-            <p>
-                <h1>SENT MAIL</h1>
-            </p>
+        <p>
+            <h1 style="float:left; clear: both;">Sent Mail</h1>
+            <h2 style="float:right; ">Logout</h2>
+        </p><br>
             <br>
 
             <!--SENT MAIL GOES HERE FROM DATABASE USING ARRAY TO LOOP THROUG-->
-            <div id="sentmail">
-            <div id="mails">
-                <li  onclick="displayMails();">
-                    <div class="mails">Adela bootcamp 42</div>
-                </li>
-                <li onclick="displayMails2();">
-                    <div class="mails" >Andela Epic Mail 2</div>
-                </li>
-                <li>
-                    <div class="mails">I am a Winner</div>
-                </li>
-                <li>
-                    <div class="mails">This is Email One</div>
-                </li>
-                <li>
-                    <div class="mails">This is Email One</div>
-                </li>
-                <li>
-                    <div class="mails">This is Email One</div>
-                </li>
-                <li>
-                    <div class="mails">This is Email One</div>
-                </li>
-                <li>
-                    <div class="mails">This is Email One</div>
-                </li>
-                <li>
-                    <div class="mails">This is Email One</div>
-                </li>
-                <li>
-                    <div class="mails">This is Email One</div>
-                </li>
-                <li>
-                    <div class="mails">This is Email One</div>
-                </li>
-            </div>
-            <div class="displaymails" id="displaymails">
-                <center>
-                    <div id="receiverimg"><img src="../image/userimage.png"></div> </center> <h2>Date: 05-06-2019</h2>
-                        <h2>To: Emmanuel Aina</h2>
-                        <h2>Title: Andela Bootcamp 42</h2><br>
-                        <hr><br><br>
-                        <p>This is Andela This is AndelaThis is AndelaThis is AndelaThis is Andela
-                            This is AndelaThis is AndelaThis is AndelaThis is Andela
-                            This is AndelaThis is AndelaThis is AndelaThis is Andela
-                            This is AndelaThis is AndelaThis is Andela<br><br>
-                            This is AndelaThis is AndelaThis is AndelaThis is Andela
-                            This is AndelaThis is AndelaThis is AndelaThis is Andela
-                            This is AndelaThis is AndelaThis is AndelaThis is Andela </p>
-                    </div>
-                <div class="displaymails" id="displaymails2">
-                    <center>
-                        <div id="receiverimg"><img src="../image/userimage.png"></div>
-                    </center>
-                    <h2>Date: 10-01-2019</h2>
-                    <h2>To: James Daniels</h2>
-                    <h2>Title: Epic MAil Andela 2</h2><br>
-                    <hr><br><br>
-                    <p>This is Andela This is AndelaThis is AndelaThis is AndelaThis is Andela
-                        This is AndelaThis is AndelaThis is AndelaThis is Andela
-                        This is AndelaThis is AndelaThis is AndelaThis is Andela
-                        This is AndelaThis is AndelaThis is Andela<br><br>
-                        This is AndelaThis is AndelaThis is AndelaThis is Andela
-                        This is AndelaThis is AndelaThis is AndelaThis is Andela
-                        This is AndelaThis is AndelaThis is AndelaThis is Andela </p>
-                </div>
-                </div>
-            </div>
-
+            <table>
+                <tr>
+                    <thead>
+                        <th>Receiver</th>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </thead>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td onclick="open1();">Andela Bootcamp 42
+                    </td>
+                    <td onclick="open1();">05-06-2019</td>
+                </tr>
+                <tr>
+                    <td>Receiver 1</td>
+                    <td>Thanks for the information you gave last time I really appreciate it thanks and god bless
+                        you</td>
+                    <td>12-03-2019</td>
+                    <td>
+                        <center><i class="fa fa-trash"></i></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Receiver 1</td>
+                    <td>Thanks for the information you gave last time I really appreciate it thanks and god bless
+                        you</td>
+                    <td>12-03-2019</td>
+                    <td>
+                        <center><i class="fa fa-trash"></i></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Receiver 1</td>
+                    <td>Thanks for the information you gave last time I really appreciate it thanks and god bless
+                        you</td>
+                    <td>12-03-2019</td>
+                    <td>
+                        <center><i class="fa fa-trash"></i></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Receiver 1</td>
+                    <td>Thanks for the information you gave last time I really appreciate it thanks and god bless
+                        you</td>
+                    <td>12-03-2019</td>
+                    <td>
+                        <center><i class="fa fa-trash"></i></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Receiver 1</td>
+                    <td>Thanks for thr information you gave last time I really appreciate it thanks and god bless
+                        you</td>
+                    <td>12-03-2019</td>
+                    <td>
+                        <center><i class="fa fa-trash"></i></center>
+                    </td>
+                </tr>
+            </table>
         </div>
 
-        <script src="../main.js"></script>
-        <script src="user.js"></script>
+    </div>
+
+    <script src="../main.js"></script>
+    <script src="user.js"></script>
 </body>
 
 </html>

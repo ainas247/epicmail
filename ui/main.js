@@ -32,12 +32,18 @@ function displayMails() {
 }
 
 
-
 function checkPass() {
-    let pass1 = document.getElementById('userpass').value
+    let fname = document.getElementById('firstname').value;
+    let sname = document.getElementById('lastname').value;
+    let emailid = document.getElementById('email').value;
     let pass2 = document.getElementById("confirm").value;
+    let pass1 = document.getElementById('userpass').value;
     if (pass1 != pass2) {
         alert('Password is Not Correct');
     }
+    if ((fname == "") || (sname == "") || (emailid == "") || (pass1 == "") || (pass2 == "")) {
+        alert('All field Required')
+        return;
+    }
 }
-
+checkPass();
